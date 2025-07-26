@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    .cuestionario {
+      max-width: 600px;
+      margin: auto;
+      background-color: rgb(243, 151, 255);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .pregunta {
+      margin-bottom: 25px;
+    }
+
+    .pregunta p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #f08c8c;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 30px auto 0;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e24977;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cuestionario">
+    <h1>Cuestionario de ejemplo</h1>
+    <form action="#" method="post">
+      
+      <div class="pregunta">
+        <p>1. ¿Cuál es la capital de Francia?</p>
+        <label><input type="radio" name="q1" value="a"> Madrid</label>
+        <label><input type="radio" name="q1" value="b"> París</label>
+        <label><input type="radio" name="q1" value="c"> Roma</label>
+      </div>
+
+      <div class="pregunta">
+        <p>2. ¿Qué lenguaje se usa para diseñar páginas web?</p>
+        <label><input type="radio" name="q2" value="a"> Python</label>
+        <label><input type="radio" name="q2" value="b"> HTML</label>
+        <label><input type="radio" name="q2" value="c"> C++</label>
+      </div>
+
+      <div class="pregunta">
+        <p>3. ¿Cuál es el resultado de 5 + 3?</p>
+        <label><input type="radio" name="q3" value="a"> 6</label>
+        <label><input type="radio" name="q3" value="b"> 8</label>
+        <label><input type="radio" name="q3" value="c"> 10</label>
+      </div>
+
+      <input type="submit" value="Enviar respuestas">
+
+    </form>
+  </div>
+
+</body>
+</html>
